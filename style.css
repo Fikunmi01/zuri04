@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border-radius: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    border-radius: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    'a a a b'
+    'a a a b'
+    'c c d d'
+    'c c e e'
+    ;
+    gap: 15px;
+    grid-column-gap: 2ch;
+    margin: auto;
+  }
+  .item_a {
+    background-color: orangered;
+    grid-area: a;
+  }
+  .item_b {
+    grid-area: b;
+    background-color: orange;
+  }
+  .item_c {
+    grid-area: c;
+    background-color: green;
+  }
+  .item_d {
+    grid-area: d;
+    background-color: blue;
+  }
+  .item_e {
+    grid-area: e;
+    background-color: blue;
+  }
+
+
+  .general {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+
+  }
+
+  .card {
+    padding: 3rem;
+    height: 31rem;
+    width: 18rem;
+  }
+
+  .icon {
+    padding-left: 0;   
+    width: 5rem;
+}
+
+.cardOne {
+background-color: hsl(31, 77%, 52%);
+border-radius: 0.6rem 0 0 0.6rem ;
+}
+
+.cardTwo {
+background-color: hsl(184, 100%, 22%);
+}
+
+.cardThree {
+border-radius: 0rem 0.8rem 0.8rem 0rem ;
+background-color: hsl(179, 100%, 13%);
+}
+
+.title {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', sans-serif;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-weight: 100;
+    font-size: 2.8rem;
+}
+
+.text {
+    color: #fff;
+}
+
+.text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 100;
+}
+
+.readMore {
+    font-size: 1.2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: #fff;
+}
+
+.readMoreOne {
+    color: hsl(31, 77%, 52%);
+}
+
+.readMoreTwo {
+    color: hsl(184, 100%, 22%);
+}
+
+.readMoreThree {
+    color: hsl(179, 100%, 13%);
+}
+
+.linkBtn {
+    padding-top: 6rem;
+}
+
+.link {
+    text-align: center;
+    top: 6rem;
+    font-size: 2rem;
+    line-height: 8;
+    cursor: pointer;
+    color: #000;
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+
+.gridClass {
+    color: #000;
+}
+
+.gridH2 {
+    line-height: 8;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .general {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 6rem;
+    }
+    .cardOne {
+        border-radius: 0.6rem 0.6rem 0 0;
+    }
+    .cardThree {
+        border-radius: 0 0 0.6rem 0.6rem;
+    }
+}
+
